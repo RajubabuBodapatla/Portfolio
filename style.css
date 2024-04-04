@@ -20,7 +20,6 @@ body{
 }
 .link {
 	font-size: 1.2em;
-	
 	padding: 5px 0;
 	position: relative;
 }
@@ -31,12 +30,18 @@ body{
 #about a{
 	text-decoration: none;
 }
-.dropdown{
+.nav-item{
 	display: none;
-	
-}
-.dropdown-item{
 	color: white !important;
+	background-color: #15141C !important;
+	transition: all 0.2s ease;
+}
+i{
+	color: white;
+}
+.dropdown-menu a:hover{
+    transform: scale(1.2);
+	color: #00DAC6 !important;
 }
 .dropdown-menu{
 	display: none;
@@ -65,7 +70,9 @@ body{
  .link:hover::after{
     transform: scaleX(1);
  }
-
+.dropdown-item{
+	color: white !important;
+}
 #nav{
     display: flex;
     justify-content: space-around;
@@ -77,11 +84,11 @@ li{
 	display: inline-block;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 #major{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 #intro{
     display:flex;
@@ -115,9 +122,8 @@ h1{
 	height: 20rem;
 	width: 25rem;
 }
-
 .aboutme{
-   
+
 	width: 70%;
 	height: 23em;
 	display: flex;
@@ -164,6 +170,10 @@ h1{
 	transition: 
 	scale 750ms ease,
 	filter 250ms ease-in-out;
+	background-color: rgba(161, 159, 159,0.5);
+	backdrop-filter: blur(40px);
+	padding: 1em;
+	border-radius: 1em;
 }
 .proj:hover{
 	scale: 1.15;
@@ -272,13 +282,18 @@ h1{
 }
 #myname h1{
   
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: "Fredericka the Great", serif;
+	font-weight: 400;
+	font-style: normal;
    color: #00DAC6;
 }
 
 .contact p{
    font-size: 1.4em;
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+	font-family: "Great Vibes", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .contact img{
@@ -304,9 +319,8 @@ h1{
 		align-items: center;
 		justify-content: space-around;
 		height: 90vh;
-		
 	}
-	.dropdown{
+	.nav-item{
 		display: block !important;
 		margin-top: 2rem;
 	}
@@ -415,7 +429,7 @@ h1{
 		align-content: space-evenly;
 	    height: 85vh;
 	}
-	.dropdown{
+	.navbar{
 		display: none;
 	}
 	#name{
@@ -460,6 +474,7 @@ h1{
 	}
 	.proj h2{
 		text-align: center;
+
 	}
 	#skills{
 		width: 100%;
